@@ -4,7 +4,7 @@
 
 ---
 
-**Git** e **GitHub** são duas tecnologias que todo desenvolvedor deve aprender, independentemente de sua área. Se você é um desenvolvedor iniciante, pode pensar que esses dois termos significam a mesma coisa, mas são diferentes.
+[**Git** e **GitHub**](https://liveestacio-my.sharepoint.com/:w:/g/personal/00661711722_professores_ibmec_edu_br/EayhNsfMEiZLkeF1G0FVcoUBAop-ccTZz_xc_sCZC5UP3A?e=IDYIcC) são duas tecnologias que todo desenvolvedor deve aprender, independentemente de sua área. Se você é um desenvolvedor iniciante, pode pensar que esses dois termos significam a mesma coisa, mas são diferentes.
 
 Este roteiro ajudará você a entender o que é Git e controle de versão, os comandos básicos do Git que você precisa conhecer, como você pode usar seus recursos para aumentar a eficiência do seu trabalho e como estender esses recursos usando o GitHub.
 
