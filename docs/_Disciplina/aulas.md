@@ -8,7 +8,7 @@
 | __04__ - 29/08/24     | Site Mkdocs / Roteiro Github / Configuração repositório Github / Apresentação de Tema do Projeto / Principais Funcionalidades do Projeto                                                 |
 | __05__ - 05/09/24     | Ibmec Day                                    |
 | __06__ - 12/09/24     | 5w2h - [Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf) - [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf) - [Scrum](../assets/Aulas/Mapa+do+Scrum+Framework+utilizado+nas+aulas.pdf) - [User Stories](../assets/Aulas/Scrum.pdf)  |
-| __07__ - 19/09/24     | Metologia Ágil (Scrum) - Sprint              |
+| __07__ - 19/09/24     | Metologia Ágil (Scrum) - Sprint - Protótipo/Figma-MarvelApp  |
 | __08__ - 26/09/24     | AP1 - Apresentação                           |
 | __09__ - 03/10/24     |                                              |
 | __10__ - 10/19/24     |                                              |
