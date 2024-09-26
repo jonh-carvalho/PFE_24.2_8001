@@ -1,9 +1,5 @@
 ## Projeto Front-End
 
-**Código da Disciplina**: IBM /-8001
-
-### <span style="color: red;">* AP1 - Apresentação 26/09/2024 - 13h30 às 15h20*
-
 ## Grupos
 
 * [PFE_24.2_8001_I_Simblissima](https://github.com/Projetos-de-Extensao/PFE_24.2_8001_I_Simblissima)
