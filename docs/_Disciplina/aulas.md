@@ -10,3 +10,4 @@
 | __06__ - 12/09/24   | - 5w2h<br>- [Brainstorm](../assets/Aulas/O%20processo%20de brainstorm.pdf)<br>- [Mapa Mental](../assets/Aulas/Mapa%20Mental.pdf)<br>- [Scrum](../assets/Aulas/Mapa+do+Scrum+Framework+utilizado+nas+aulas.pdf)<br>- [User Stories](../assets/Aulas/Scrum.pdf) |
 | __07__ - 19/09/24   | - Documento de Visão<br>- Metologia Ágil (Scrum - Sprints)<br>- Protótipo/Figma-MarvelApp<br>- [Análise de Tarefas](../assets/Aulas/Análise%20de%20Tarefas.pdf) |
 | __08__ - 26/09/24   | AP1 |
+| __09__ - 03/10/24   | [Avaliação de Interfaces](../assets/Aulas/Avaliação_de_Interfaces.pdf) | 
