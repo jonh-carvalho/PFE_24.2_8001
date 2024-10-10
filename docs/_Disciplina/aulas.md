@@ -11,4 +11,4 @@
 | __07__ - 19/09/24   | - Documento de Visão<br>- Metologia Ágil (Scrum - Sprints)<br>- Protótipo/Figma-MarvelApp<br>- [Análise de Tarefas](../assets/Aulas/Análise%20de%20Tarefas.pdf) |
 | __08__ - 26/09/24   | AP1 |
 | __09__ - 03/10/24   | [Avaliação de Interfaces](../assets/Aulas/Avaliação_de_Interfaces.pdf) | 
-| __10__ - 10/10/24   | Introdução ao React | 
+| __10__ - 10/10/24   | [Introdução ao React](../assets/Aulas/Introducao-ao-Reactjs.pptx) | 
