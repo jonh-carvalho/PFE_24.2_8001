@@ -253,7 +253,7 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#titulo-introducao-ao-react-com-html-e-cdn">Título: Introdução ao React com HTML e CDN</a></li>
+        <li class="first-level active"><a href="#introducao-ao-react-com-html-e-cdn">Introdução ao React com HTML e CDN</a></li>
             <li class="second-level"><a href="#objetivo">Objetivo:</a></li>
                 
         <li class="first-level "><a href="#estrutura-do-roteiro">Estrutura do Roteiro:</a></li>
@@ -270,7 +270,7 @@
         <div class="col-md-9" role="main">
 
 <hr />
-<h3 id="titulo-introducao-ao-react-com-html-e-cdn"><strong>Título: Introdução ao React com HTML e CDN</strong></h3>
+<h3 id="introducao-ao-react-com-html-e-cdn"><strong>Introdução ao React com HTML e CDN</strong></h3>
 <hr />
 <h4 id="objetivo"><strong>Objetivo:</strong></h4>
 <p>Apresentar os conceitos básicos do React e como integrá-lo em uma página HTML utilizando um link para a CDN, sem a necessidade de um ambiente de desenvolvimento local como o Node.js.</p>
@@ -299,37 +299,36 @@
 </ul>
 </li>
 </ul>
-<p>```html
-   <!DOCTYPE html></p>
-<html lang="en">
-   <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>React Introdução</title>
-   </head>
-   <body>
-     <!-- Div onde o React renderizará o conteúdo -->
-     <div id="root"></div>
+<pre><code class="language-html">   &lt;!DOCTYPE html&gt;
+   &lt;html lang=&quot;en&quot;&gt;
+   &lt;head&gt;
+     &lt;meta charset=&quot;UTF-8&quot;&gt;
+     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+     &lt;title&gt;React Introdução&lt;/title&gt;
+   &lt;/head&gt;
+   &lt;body&gt;
+     &lt;!-- Div onde o React renderizará o conteúdo --&gt;
+     &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
 
-     <!-- Scripts do React via CDN -->
-     <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
-     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
-     <!-- Nosso script JavaScript -->
-     <script src="app.js"></script>
-   </body>
-   </html>
-<p>```</p>
+     &lt;!-- Scripts do React via CDN --&gt;
+     &lt;script src=&quot;https://unpkg.com/react@17/umd/react.production.min.js&quot; crossorigin&gt;&lt;/script&gt;
+     &lt;script src=&quot;https://unpkg.com/react-dom@17/umd/react-dom.production.min.js&quot; crossorigin&gt;&lt;/script&gt;
+     &lt;!-- Nosso script JavaScript --&gt;
+     &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
+   &lt;/body&gt;
+   &lt;/html&gt;
+</code></pre>
 <hr />
 <h4 id="4-criando-um-elemento-react"><strong>4. Criando um Elemento React</strong></h4>
 <p>Crie o arquivo <code>app.js</code> com o seguinte código:</p>
-<p><code>javascript
-   ReactDOM.render(
+<pre><code class="language-javascript">   ReactDOM.render(
     React.createElement(
         'h1',
         null,
         'Hello, World!'
     ),
-    document.getElementById('root'))</code></p></div>
+    document.getElementById('root'))
+</code></pre></div>
         
         
     </div>
