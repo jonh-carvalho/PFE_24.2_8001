@@ -1,6 +1,6 @@
 ---
 
-### **Título: Introdução ao React com HTML e CDN**
+### **Introdução ao React com HTML e CDN**
 
 ---
 
@@ -29,7 +29,7 @@ Apresentar os conceitos básicos do React e como integrá-lo em uma página HTML
    - **HTML Básico**: 
      - Comece com a criação de uma página HTML simples contendo um elemento `<div>` que será usado como “ponto de montagem” para o React.
      
-   ```html
+```html
    <!DOCTYPE html>
    <html lang="en">
    <head>
@@ -48,7 +48,7 @@ Apresentar os conceitos básicos do React e como integrá-lo em uma página HTML
      <script src="app.js"></script>
    </body>
    </html>
-   ```
+```
 
 ---
 
@@ -57,7 +57,7 @@ Apresentar os conceitos básicos do React e como integrá-lo em uma página HTML
    
    Crie o arquivo `app.js` com o seguinte código:
    
-   ```javascript
+```javascript
    ReactDOM.render(
     React.createElement(
         'h1',
@@ -65,4 +65,4 @@ Apresentar os conceitos básicos do React e como integrá-lo em uma página HTML
         'Hello, World!'
     ),
     document.getElementById('root'))
-   ```
+```
