@@ -253,85 +253,133 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#introducao-ao-react-usando-cdn">Introdução ao React Usando CDN</a></li>
-            <li class="second-level"><a href="#1-criar-um-novo-arquivo-html">1. Criar um Novo Arquivo HTML:</a></li>
+        <li class="first-level active"><a href="#titulo-introducao-ao-react-com-html-e-cdn">Título: Introdução ao React com HTML e CDN</a></li>
+            <li class="second-level"><a href="#objetivo">Objetivo:</a></li>
                 
-            <li class="second-level"><a href="#2-criar-um-arquivo-javascript">2. Criar um Arquivo JavaScript:</a></li>
+        <li class="first-level "><a href="#estrutura-do-roteiro">Estrutura do Roteiro:</a></li>
+            <li class="second-level"><a href="#1-introducao-ao-react">1. Introdução ao React</a></li>
                 
-            <li class="second-level"><a href="#3-entendendo-o-codigo">3. Entendendo o Código:</a></li>
+            <li class="second-level"><a href="#2-preparando-o-ambiente">2. Preparando o Ambiente</a></li>
                 
-            <li class="second-level"><a href="#4-executar-o-codigo">4. Executar o Código:</a></li>
+            <li class="second-level"><a href="#3-estrutura-basica-do-projeto">3. Estrutura Básica do Projeto</a></li>
                 
-            <li class="second-level"><a href="#5-proximos-passos">5. Próximos Passos:</a></li>
+            <li class="second-level"><a href="#4-criando-um-componente-react">4. Criando um Componente React</a></li>
                 
-            <li class="second-level"><a href="#dicas-adicionais">Dicas Adicionais:</a></li>
+            <li class="second-level"><a href="#5-explicando-o-codigo">5. Explicando o Código</a></li>
+                
+            <li class="second-level"><a href="#6-estendendo-o-exemplo">6. Estendendo o Exemplo</a></li>
+                
+            <li class="second-level"><a href="#7-conclusao">7. Conclusão</a></li>
                 
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h2 id="introducao-ao-react-usando-cdn">Introdução ao React Usando CDN</h2>
-<h3 id="1-criar-um-novo-arquivo-html">1. <strong>Criar um Novo Arquivo HTML:</strong></h3>
+<hr />
+<h3 id="titulo-introducao-ao-react-com-html-e-cdn"><strong>Título: Introdução ao React com HTML e CDN</strong></h3>
+<hr />
+<h4 id="objetivo"><strong>Objetivo:</strong></h4>
+<p>Apresentar os conceitos básicos do React e como integrá-lo em uma página HTML utilizando um link para a CDN, sem a necessidade de um ambiente de desenvolvimento local como o Node.js.</p>
+<hr />
+<h3 id="estrutura-do-roteiro"><strong>Estrutura do Roteiro:</strong></h3>
+<h4 id="1-introducao-ao-react"><strong>1. Introdução ao React</strong></h4>
 <ul>
-<li><strong>Nome:</strong> index.html</li>
-<li><strong>Conteúdo inicial:</strong> Um simples documento HTML com uma div com um ID específico para servir como ponto de montagem para o componente React.</li>
+<li><strong>Definição</strong>: React é uma biblioteca JavaScript criada pelo Facebook para criar interfaces de usuário de forma declarativa e eficiente.</li>
+<li><strong>Vantagens</strong>:<ul>
+<li>Componentes reutilizáveis.</li>
+<li>Atualizações rápidas do DOM (Virtual DOM).</li>
+<li>Facilita a criação de Single Page Applications (SPAs).</li>
 </ul>
-<pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
-&lt;head&gt;
-  &lt;title&gt;Introdução ao React&lt;/title&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
-  &lt;script src=&quot;https://unpkg.com/react@18/umd/react.development.js&quot; crossorigin&gt;&lt;/script&gt;
-  &lt;script src=&quot;https://unpkg.com/react-dom@18/umd/react-dom.development.js&quot; crossorigin&gt;&lt;/script&gt;
-  &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
-&lt;/body&gt;
-&lt;/html&gt;
-</code></pre>
-<h3 id="2-criar-um-arquivo-javascript">2. <strong>Criar um Arquivo JavaScript:</strong></h3>
+</li>
+</ul>
+<hr />
+<h4 id="2-preparando-o-ambiente"><strong>2. Preparando o Ambiente</strong></h4>
 <ul>
-<li><strong>Nome:</strong> app.js</li>
-<li><strong>Conteúdo:</strong></li>
-<li><strong>Importar React e ReactDOM:</strong> Importe as bibliotecas React e ReactDOM do CDN.</li>
-<li><strong>Criar um componente React:</strong> Use a função <code>createRoot</code> para criar um root e renderizar um componente React dentro da div com o ID "root".</li>
+<li>Não é necessário instalar nada localmente para este exemplo inicial, vamos usar uma página HTML e um link para a biblioteca via CDN.</li>
 </ul>
-<pre><code class="language-javascript">import React from 'https://unpkg.com/react@18/umd/react.development.js';
-import ReactDOM from 'https://unpkg.com/react-dom@18/umd/react-dom.development.js';
+<hr />
+<h4 id="3-estrutura-basica-do-projeto"><strong>3. Estrutura Básica do Projeto</strong></h4>
+<ul>
+<li><strong>HTML Básico</strong>: <ul>
+<li>Comece com a criação de uma página HTML simples contendo um elemento <code>&lt;div&gt;</code> que será usado como “ponto de montagem” para o React.</li>
+</ul>
+</li>
+</ul>
+<p>```html
+   <!DOCTYPE html></p>
+<html lang="en">
+   <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>React Introdução</title>
+   </head>
+   <body>
+     <!-- Div onde o React renderizará o conteúdo -->
+     <div id="root"></div>
 
-const myHeading = &lt;h1&gt;Olá, mundo! Este é meu primeiro componente React.&lt;/h1&gt;;
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(myHeading);
-</code></pre>
-<h3 id="3-entendendo-o-codigo">3. <strong>Entendendo o Código:</strong></h3>
+     <!-- Scripts do React via CDN -->
+     <script src="https://unpkg.com/react@17/umd/react.production.min.js" crossorigin></script>
+     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js" crossorigin></script>
+     <!-- Nosso script JavaScript -->
+     <script src="app.js"></script>
+   </body>
+   </html>
+<p>```</p>
+<hr />
+<h4 id="4-criando-um-componente-react"><strong>4. Criando um Componente React</strong></h4>
 <ul>
-<li><strong>CDN:</strong> Os links para <code>react.development.js</code> e <code>react-dom.development.js</code> carregam as bibliotecas React diretamente do CDN do unpkg.</li>
-<li><strong>JSX:</strong> O código <code>&lt;h1&gt;Olá, mundo!&lt;/h1&gt;;</code> é JSX, uma sintaxe similar ao HTML que é transformada em chamadas de funções JavaScript pelo Babel ou outro transpilador.</li>
-<li><strong>ReactDOM.createRoot:</strong> Cria um root para renderizar componentes React no DOM.</li>
-<li><strong>root.render:</strong> Renderiza o componente <code>myHeading</code> dentro do elemento com o ID "root".</li>
+<li><strong>Componente de Função</strong>: Usaremos um componente de função básico que renderiza "Hello, React!".</li>
 </ul>
-<h3 id="4-executar-o-codigo">4. <strong>Executar o Código:</strong></h3>
+<p>Crie o arquivo <code>app.js</code> com o seguinte código:</p>
+<p>```javascript
+   // Criando um componente de função
+   function App() {
+     return (
+       <div>
+         <h1>Hello, React!</h1>
+         <p>Este é seu primeiro componente React!</p>
+       </div>
+     );
+   }</p>
+<p>// Renderizando o componente no DOM
+   ReactDOM.render(<App />, document.getElementById('root'));
+   ```</p>
+<hr />
+<h4 id="5-explicando-o-codigo"><strong>5. Explicando o Código</strong></h4>
 <ul>
-<li><strong>Abrir o arquivo HTML:</strong> Abra o arquivo <code>index.html</code> em um navegador.</li>
-<li><strong>Ver o resultado:</strong> Você verá a mensagem "Olá, mundo!" exibida na página.</li>
+<li><strong>ReactDOM.render</strong>: Explica como o ReactDOM.render monta o componente React no DOM.</li>
+<li><strong>Componente Funcional</strong>: Mostre como o componente <code>App</code> retorna uma estrutura JSX, que é uma sintaxe semelhante a HTML, mas que será compilada em JavaScript puro.</li>
+<li><strong>JSX</strong>: Explique brevemente que o JSX é uma extensão da sintaxe JavaScript que permite escrever código semelhante a HTML dentro do JavaScript, e que o Babel compila isso em chamadas <code>React.createElement()</code>.</li>
 </ul>
-<h3 id="5-proximos-passos">5. <strong>Próximos Passos:</strong></h3>
+<hr />
+<h4 id="6-estendendo-o-exemplo"><strong>6. Estendendo o Exemplo</strong></h4>
 <ul>
-<li><strong>Componentes:</strong> Explore a criação de componentes mais complexos com props e state.</li>
-<li><strong>JSX:</strong> Aprofunde seus conhecimentos em JSX e como ele é transformado em JavaScript.</li>
-<li><strong>React Developer Tools:</strong> Instale as ferramentas de desenvolvedor do React para inspecionar seus componentes.</li>
-<li><strong>Gerenciadores de pacotes:</strong> Explore o uso de gerenciadores de pacotes como npm ou yarn para gerenciar dependências em projetos maiores.</li>
-<li><strong>Webpack ou Create React App:</strong> Para projetos mais complexos, utilize ferramentas de build como Webpack ou use o Create React App para configurar um ambiente de desenvolvimento mais rápido.</li>
+<li><strong>Adicionar Props</strong>: Mostre como podemos passar propriedades (props) para os componentes para torná-los dinâmicos.</li>
 </ul>
-<h3 id="dicas-adicionais"><strong>Dicas Adicionais:</strong></h3>
+<p>No <code>app.js</code>, modifique o código para incluir uma propriedade:</p>
+<p>```javascript
+   function App(props) {
+     return (
+       <div>
+         <h1>Hello, {props.name}!</h1>
+         <p>Este é seu primeiro componente React!</p>
+       </div>
+     );
+   }</p>
+<p>ReactDOM.render(<App name="Mundo React" />, document.getElementById('root'));
+   ```</p>
+<hr />
+<h4 id="7-conclusao"><strong>7. Conclusão</strong></h4>
 <ul>
-<li><strong>Ambiente de desenvolvimento:</strong> Considere usar um editor de código com suporte a JSX e React, como o Visual Studio Code.</li>
-<li><strong>Documentação oficial:</strong> Consulte a documentação oficial do React para obter informações mais detalhadas e exemplos.</li>
-<li><strong>Comunidade:</strong> Participe da comunidade React para tirar dúvidas e aprender com outros desenvolvedores.</li>
+<li><strong>Recapitulando</strong>: Você criou seu primeiro componente React, utilizou o JSX e entendeu como o React monta a interface dentro de um elemento do DOM.</li>
+<li><strong>Próximos Passos</strong>:<ul>
+<li>Explorar mais sobre estados e ciclo de vida de componentes.</li>
+<li>Introdução a ferramentas como Create React App para desenvolvimento avançado.</li>
 </ul>
-<p><strong>Este roteiro fornece uma base sólida para começar a aprender React. Ao seguir estes passos e explorar os recursos adicionais, você estará pronto para criar aplicações web interativas e dinâmicas.</strong></p>
-<p><strong>Gostaria de aprofundar em algum tópico específico, como props, state ou JSX?</strong> </p></div>
+</li>
+</ul>
+<hr />
+<p>Esse roteiro cobre os conceitos fundamentais de React e como integrá-lo rapidamente em um projeto sem muita configuração.</p></div>
         
         
     </div>
