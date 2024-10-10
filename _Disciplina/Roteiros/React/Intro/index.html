@@ -263,13 +263,7 @@
                 
             <li class="second-level"><a href="#3-estrutura-basica-do-projeto">3. Estrutura Básica do Projeto</a></li>
                 
-            <li class="second-level"><a href="#4-criando-um-componente-react">4. Criando um Componente React</a></li>
-                
-            <li class="second-level"><a href="#5-explicando-o-codigo">5. Explicando o Código</a></li>
-                
-            <li class="second-level"><a href="#6-estendendo-o-exemplo">6. Estendendo o Exemplo</a></li>
-                
-            <li class="second-level"><a href="#7-conclusao">7. Conclusão</a></li>
+            <li class="second-level"><a href="#4-criando-um-elemento-react">4. Criando um Elemento React</a></li>
                 
     </ul>
 </div></div>
@@ -326,60 +320,16 @@
    </html>
 <p>```</p>
 <hr />
-<h4 id="4-criando-um-componente-react"><strong>4. Criando um Componente React</strong></h4>
-<ul>
-<li><strong>Componente de Função</strong>: Usaremos um componente de função básico que renderiza "Hello, React!".</li>
-</ul>
+<h4 id="4-criando-um-elemento-react"><strong>4. Criando um Elemento React</strong></h4>
 <p>Crie o arquivo <code>app.js</code> com o seguinte código:</p>
-<p>```javascript
-   // Criando um componente de função
-   function App() {
-     return (
-       <div>
-         <h1>Hello, React!</h1>
-         <p>Este é seu primeiro componente React!</p>
-       </div>
-     );
-   }</p>
-<p>// Renderizando o componente no DOM
-   ReactDOM.render(<App />, document.getElementById('root'));
-   ```</p>
-<hr />
-<h4 id="5-explicando-o-codigo"><strong>5. Explicando o Código</strong></h4>
-<ul>
-<li><strong>ReactDOM.render</strong>: Explica como o ReactDOM.render monta o componente React no DOM.</li>
-<li><strong>Componente Funcional</strong>: Mostre como o componente <code>App</code> retorna uma estrutura JSX, que é uma sintaxe semelhante a HTML, mas que será compilada em JavaScript puro.</li>
-<li><strong>JSX</strong>: Explique brevemente que o JSX é uma extensão da sintaxe JavaScript que permite escrever código semelhante a HTML dentro do JavaScript, e que o Babel compila isso em chamadas <code>React.createElement()</code>.</li>
-</ul>
-<hr />
-<h4 id="6-estendendo-o-exemplo"><strong>6. Estendendo o Exemplo</strong></h4>
-<ul>
-<li><strong>Adicionar Props</strong>: Mostre como podemos passar propriedades (props) para os componentes para torná-los dinâmicos.</li>
-</ul>
-<p>No <code>app.js</code>, modifique o código para incluir uma propriedade:</p>
-<p>```javascript
-   function App(props) {
-     return (
-       <div>
-         <h1>Hello, {props.name}!</h1>
-         <p>Este é seu primeiro componente React!</p>
-       </div>
-     );
-   }</p>
-<p>ReactDOM.render(<App name="Mundo React" />, document.getElementById('root'));
-   ```</p>
-<hr />
-<h4 id="7-conclusao"><strong>7. Conclusão</strong></h4>
-<ul>
-<li><strong>Recapitulando</strong>: Você criou seu primeiro componente React, utilizou o JSX e entendeu como o React monta a interface dentro de um elemento do DOM.</li>
-<li><strong>Próximos Passos</strong>:<ul>
-<li>Explorar mais sobre estados e ciclo de vida de componentes.</li>
-<li>Introdução a ferramentas como Create React App para desenvolvimento avançado.</li>
-</ul>
-</li>
-</ul>
-<hr />
-<p>Esse roteiro cobre os conceitos fundamentais de React e como integrá-lo rapidamente em um projeto sem muita configuração.</p></div>
+<p><code>javascript
+   ReactDOM.render(
+    React.createElement(
+        'h1',
+        null,
+        'Hello, World!'
+    ),
+    document.getElementById('root'))</code></p></div>
         
         
     </div>
