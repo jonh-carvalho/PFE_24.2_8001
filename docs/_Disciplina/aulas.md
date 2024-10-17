@@ -12,3 +12,4 @@
 | __08__ - 26/09/24   | AP1 |
 | __09__ - 03/10/24   | [Avaliação de Interfaces](../assets/Aulas/Avaliação_de_Interfaces.pdf) | 
 | __10__ - 10/10/24   | [Introdução ao React](../assets/Aulas/Introducao-ao-Reactjs.pdf) | 
+| __11__ - 17/10/24   | App React Vite - [Componentes](../_Disciplina/Roteiros/React/Componentes.md) | 

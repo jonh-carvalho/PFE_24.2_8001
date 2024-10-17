@@ -1,4 +1,4 @@
-Criar um SPA (Single Page Application) utilizando **React** com **Vite** é uma ótima escolha para obter um ambiente de desenvolvimento rápido e eficiente. Vou te guiar no processo:
+### Criar um SPA (Single Page Application) utilizando **React** com **Vite**
 
 ### Passos para criar um SPA React com Vite:
 
