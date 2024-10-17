@@ -9812,90 +9812,100 @@
 
 <h3 id="criar-um-spa-single-page-application-utilizando-react-com-vite">Criar um SPA (Single Page Application) utilizando <strong>React</strong> com <strong>Vite</strong></h3>
 <h3 id="passos-para-criar-um-spa-react-com-vite">Passos para criar um SPA React com Vite:</h3>
-<ol>
-<li><strong>Instalar o Vite</strong>:
-   Vite é uma ferramenta de construção que facilita a criação de apps modernos com uma performance excelente. Para começar, abra seu terminal e execute o seguinte comando:</li>
-</ol>
-<p><code>bash
-   npm create vite@latest my-spa-app</code></p>
+<p>1. <strong>Instalar o Vite</strong>:
+   Vite é uma ferramenta de construção que facilita a criação de apps modernos com uma performance excelente. Para começar, abra seu terminal e execute o seguinte comando:</p>
+<pre><code class="language-bash">   npm create vite@latest my-spa-app
+</code></pre>
 <p>O Vite irá te guiar na configuração inicial do projeto. Escolha as seguintes opções:</p>
 <ul>
 <li><code>Project name</code>: <strong>my-spa-app</strong> (ou o nome que preferir)</li>
 <li><code>Select a framework</code>: <strong>React</strong></li>
 <li><code>Select a variant</code>: <strong>JavaScript</strong> ou <strong>TypeScript</strong>, dependendo de sua preferência.</li>
-<li><strong>Instalar as dependências</strong>:
-   Após criar o projeto, vá para a pasta do projeto e instale as dependências:</li>
 </ul>
-<p><code>bash
-   cd my-spa-app
-   npm install</code>
-3. <strong>Estrutura de pastas</strong>:
+<p>2. <strong>Instalar as dependências</strong>:
+   Após criar o projeto, vá para a pasta do projeto e instale as dependências:</p>
+<pre><code>   cd my-spa-app
+
+   npm install
+</code></pre>
+<p>3. <strong>Estrutura de pastas</strong>:
    Ao concluir, a estrutura do projeto será algo como:</p>
-<p><code>├── public
-   ├── src
-   │   ├── assets
-   │   ├── App.jsx
-   │   ├── main.jsx
-   │   └── index.css
-   ├── index.html
-   └── vite.config.js</code>
-4. <strong>Iniciar o servidor de desenvolvimento</strong>:
-   Agora você pode iniciar o servidor de desenvolvimento e ver o app rodando:</p>
-<p><code>bash
-   npm run dev</code>
-5. <strong>Criando Componentes de Rotas (React Router)</strong>:
+<pre><code>public
+
+src
+
+    assets
+
+    App.jsx
+
+    main.jsx
+
+    index.css
+
+    index.html
+
+vite.config.js
+</code></pre>
+<p>4. <strong>Iniciar o servidor de desenvolvimento</strong>:</p>
+<p>Agora você pode iniciar o servidor de desenvolvimento e ver o app rodando:</p>
+<pre><code>   npm run dev
+</code></pre>
+<p>5. <strong>Criando Componentes de Rotas (React Router)</strong>:
    Para um SPA, é comum utilizar o <strong>React Router</strong> para navegação. Instale-o:</p>
-<p><code>bash
-   npm install react-router-dom</code></p>
+<pre><code class="language-bash">   npm install react-router-dom
+</code></pre>
 <p>Em seguida, configure as rotas no arquivo <code>App.jsx</code>:</p>
-<p>```jsx
+<pre><code class="language-js">
    import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
    import Home from './components/Home';
-   import About from './components/About';</p>
-<p>function App() {
+   import About from './components/About';
+
+   function App() {
      return (
-       <Router>
-         <Routes>
-           <Route path="/" element={\<Home />} />
-           <Route path="/about" element={\<About />} />
-         </Routes>
-       </Router>
+       &lt;Router&gt;
+         &lt;Routes&gt;
+           &lt;Route path=&quot;/&quot; element={&lt;Home /&gt;} /&gt;
+           &lt;Route path=&quot;/about&quot; element={&lt;About /&gt;} /&gt;
+         &lt;/Routes&gt;
+       &lt;/Router&gt;
      );
-   }</p>
-<p>export default App;
-   ```
-6. <strong>Criar Páginas (Componentes)</strong>:
+   }
+
+   export default App;
+</code></pre>
+<p>6. <strong>Criar Páginas (Componentes)</strong>:
    Crie os componentes para as páginas:</p>
 <ul>
-<li>
-<p><code>src/components/Home.jsx</code>:</p>
-<p>```jsx
- function Home() {
-   return <h1>Welcome to Home Page</h1>;
- }</p>
-<p>export default Home;
- <code>``
-   -</code>src/components/About.jsx`:</p>
-<p>```jsx
- function About() {
-   return <h1>About Us</h1>;
- }</p>
-<p>export default About;
- <code>``
-7. **Estilos (CSS)**:
-   Para adicionar estilos, você pode usar o arquivo</code>index.css` ou criar estilos específicos para cada componente.
-8. <strong>Build do projeto</strong>:
-   Quando quiser fazer o build do projeto para produção, basta rodar:</p>
-</li>
+<li><code>src/components/Home.jsx</code>:</li>
 </ul>
-<p><code>bash
-   npm run build</code></p>
+<pre><code class="language-jsx">  function Home() {
+    return &lt;h1&gt;Welcome to Home Page&lt;/h1&gt;;
+  }
+
+  export default Home;
+</code></pre>
+<ul>
+<li><code>src/components/About.jsx</code>:</li>
+</ul>
+<pre><code class="language-jsx">  function About() {
+    return &lt;h1&gt;About Us&lt;/h1&gt;;
+  }
+
+  export default About;
+</code></pre>
+<p>7. <strong>Estilos (CSS)</strong>:
+   Para adicionar estilos, você pode usar o arquivo <code>index.css</code> ou criar estilos específicos para cada componente.</p>
+<p>8. <strong>Build do projeto</strong>:
+   Quando quiser fazer o build do projeto para produção, basta rodar:</p>
+<pre><code class="language-bash">   npm run build
+</code></pre>
 <hr />
 <h2 id="expandindo-sua-spa">Expandindo sua SPA</h2>
 <p>Para criar uma <strong>landing page</strong> com React, você pode estruturar a aplicação com diversos componentes reutilizáveis. Vou sugerir três componentes típicos que você pode incluir em uma landing page e fornecer o código para cada um:</p>
 <h3 id="1-hero-section">1. <strong>Hero Section</strong></h3>
 <p>Esse componente é o primeiro que o usuário vê, geralmente inclui uma mensagem de boas-vindas, uma breve descrição e um call-to-action (CTA).</p>
-<pre><code class="language-jsx">// src/components/Hero.jsx
+<pre><code class="language-js">
+// src/components/Hero.jsx
 function Hero() {
   return (
     &lt;section className=&quot;hero&quot;&gt;
@@ -9912,7 +9922,8 @@ export default Hero;
 </code></pre>
 <h3 id="2-features-section">2. <strong>Features Section</strong></h3>
 <p>Este componente destaca os principais recursos ou benefícios do produto/serviço oferecido pela landing page.</p>
-<pre><code class="language-jsx">// src/components/Features.jsx
+<pre><code class="language-js">
+// src/components/Features.jsx
 function Features() {
   return (
     &lt;section className=&quot;features&quot;&gt;
@@ -9941,7 +9952,8 @@ export default Features;
 </code></pre>
 <h3 id="3-testimonial-section">3. <strong>Testimonial Section</strong></h3>
 <p>Um componente de depoimentos para mostrar feedback de usuários satisfeitos.</p>
-<pre><code class="language-jsx">// src/components/Testimonials.jsx
+<pre><code class="language-js">
+// src/components/Testimonials.jsx
 function Testimonials() {
   return (
     &lt;section className=&quot;testimonials&quot;&gt;
@@ -9970,7 +9982,8 @@ export default Testimonials;
 </code></pre>
 <h3 id="como-combinar-esses-componentes">Como combinar esses componentes:</h3>
 <p>Agora você pode combinar esses componentes dentro do arquivo principal <code>App.jsx</code>:</p>
-<pre><code class="language-jsx">import Hero from './components/Hero';
+<pre><code class="language-js">
+import Hero from './components/Hero';
 import Features from './components/Features';
 import Testimonials from './components/Testimonials';
 
