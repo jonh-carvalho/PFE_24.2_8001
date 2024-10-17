@@ -2,54 +2,68 @@
 
 ### Passos para criar um SPA React com Vite:
 
-1. **Instalar o Vite**:
+1\. **Instalar o Vite**:
    Vite é uma ferramenta de construção que facilita a criação de apps modernos com uma performance excelente. Para começar, abra seu terminal e execute o seguinte comando:
 
-   ```bash
+```bash
    npm create vite@latest my-spa-app
-   ```
+```
 
    O Vite irá te guiar na configuração inicial do projeto. Escolha as seguintes opções:
 
-   - `Project name`: **my-spa-app** (ou o nome que preferir)
-   - `Select a framework`: **React**
-   - `Select a variant`: **JavaScript** ou **TypeScript**, dependendo de sua preferência.
-2. **Instalar as dependências**:
+- `Project name`: **my-spa-app** (ou o nome que preferir)
+- `Select a framework`: **React**
+- `Select a variant`: **JavaScript** ou **TypeScript**, dependendo de sua preferência.
+
+2\. **Instalar as dependências**:
    Após criar o projeto, vá para a pasta do projeto e instale as dependências:
 
-   ```bash
+```
    cd my-spa-app
+
    npm install
-   ```
-3. **Estrutura de pastas**:
+```
+
+3\. **Estrutura de pastas**:
    Ao concluir, a estrutura do projeto será algo como:
 
-   ```
-   ├── public
-   ├── src
-   │   ├── assets
-   │   ├── App.jsx
-   │   ├── main.jsx
-   │   └── index.css
-   ├── index.html
-   └── vite.config.js
-   ```
-4. **Iniciar o servidor de desenvolvimento**:
+```
+public
+
+src
+
+	assets
+
+	App.jsx
+
+	main.jsx
+
+	index.css
+
+	index.html
+
+vite.config.js
+```
+
+4\. **Iniciar o servidor de desenvolvimento**:
+
    Agora você pode iniciar o servidor de desenvolvimento e ver o app rodando:
 
-   ```bash
+```
    npm run dev
-   ```
-5. **Criando Componentes de Rotas (React Router)**:
+```
+
+5\. **Criando Componentes de Rotas (React Router)**:
    Para um SPA, é comum utilizar o **React Router** para navegação. Instale-o:
 
-   ```bash
+```bash
    npm install react-router-dom
-   ```
+```
 
    Em seguida, configure as rotas no arquivo `App.jsx`:
 
-   ```jsx
+```js
+
    import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
    import Home from './components/Home';
    import About from './components/About';
@@ -66,36 +80,40 @@
    }
 
    export default App;
-   ```
-6. **Criar Páginas (Componentes)**:
+```
+
+6\. **Criar Páginas (Componentes)**:
    Crie os componentes para as páginas:
 
-   - `src/components/Home.jsx`:
+- `src/components/Home.jsx`:
 
-     ```jsx
-     function Home() {
-       return <h1>Welcome to Home Page</h1>;
-     }
+```jsx
+  function Home() {
+    return <h1>Welcome to Home Page</h1>;
+  }
 
-     export default Home;
-     ```
-   - `src/components/About.jsx`:
+  export default Home;
+```
 
-     ```jsx
-     function About() {
-       return <h1>About Us</h1>;
-     }
+- `src/components/About.jsx`:
 
-     export default About;
-     ```
-7. **Estilos (CSS)**:
+```jsx
+  function About() {
+    return <h1>About Us</h1>;
+  }
+
+  export default About;
+```
+
+7\. **Estilos (CSS)**:
    Para adicionar estilos, você pode usar o arquivo `index.css` ou criar estilos específicos para cada componente.
-8. **Build do projeto**:
+
+8\. **Build do projeto**:
    Quando quiser fazer o build do projeto para produção, basta rodar:
 
-   ```bash
+```bash
    npm run build
-   ```
+```
 
 ---
 
@@ -107,7 +125,8 @@ Para criar uma **landing page** com React, você pode estruturar a aplicação c
 
 Esse componente é o primeiro que o usuário vê, geralmente inclui uma mensagem de boas-vindas, uma breve descrição e um call-to-action (CTA).
 
-```jsx
+```js
+
 // src/components/Hero.jsx
 function Hero() {
   return (
@@ -128,7 +147,8 @@ export default Hero;
 
 Este componente destaca os principais recursos ou benefícios do produto/serviço oferecido pela landing page.
 
-```jsx
+```js
+
 // src/components/Features.jsx
 function Features() {
   return (
@@ -161,7 +181,8 @@ export default Features;
 
 Um componente de depoimentos para mostrar feedback de usuários satisfeitos.
 
-```jsx
+```js
+
 // src/components/Testimonials.jsx
 function Testimonials() {
   return (
@@ -194,7 +215,8 @@ export default Testimonials;
 
 Agora você pode combinar esses componentes dentro do arquivo principal `App.jsx`:
 
-```jsx
+```js
+
 import Hero from './components/Hero';
 import Features from './components/Features';
 import Testimonials from './components/Testimonials';
