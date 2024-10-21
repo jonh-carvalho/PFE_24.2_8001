@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../../img/favicon.ico">
 
     
-    <title>Protótipo - PFE_24.2_8001</title>
+    <title>04 Componentes - PFE_24.2_8001</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -123,8 +123,8 @@
     <ul class="dropdown-menu">
         
             
-<li class="active">
-    <a href="./">Protótipo</a>
+<li >
+    <a href="../../Prot%C3%B3tipo/prot%C3%B3tipo/">Protótipo</a>
 </li>
 
         
@@ -139,25 +139,25 @@
         
             
 <li >
-    <a href="../../React/01_Intro/">01 Intro</a>
+    <a href="../01_Intro/">01 Intro</a>
 </li>
 
         
             
 <li >
-    <a href="../../React/02_NodeViteReact/">02 NodeViteReact</a>
+    <a href="../02_NodeViteReact/">02 NodeViteReact</a>
 </li>
 
         
             
 <li >
-    <a href="../../React/03_Spa/">03 Spa</a>
+    <a href="../03_Spa/">03 Spa</a>
 </li>
 
         
             
-<li >
-    <a href="../../React/04_Componentes/">04 Componentes</a>
+<li class="active">
+    <a href="./">04 Componentes</a>
 </li>
 
         
@@ -237,17 +237,17 @@
 
             <ul class="nav navbar-nav navbar-right">
                     <li >
-                        <a rel="prev" href="../../AHT/aht/">
+                        <a rel="prev" href="../03_Spa/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../../React/01_Intro/">
+                        <a rel="next" href="../../../../base/5w2h/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/jonh-carvalho/PFE_24.2_8001/edit/master/docs/_Disciplina/Roteiros/Protótipo/protótipo.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/jonh-carvalho/PFE_24.2_8001/edit/master/docs/_Disciplina/Roteiros/React/04_Componentes.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -259,99 +259,242 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#prototipo">Protótipo</a></li>
-            <li class="second-level"><a href="#1-fazer-login-no-sistema">1. Fazer login no sistema</a></li>
+        <li class="first-level active"><a href="#criar-um-spa-single-page-application-utilizando-react-com-vite">Criar um SPA (Single Page Application) utilizando React com Vite</a></li>
+        <li class="first-level "><a href="#passos-para-criar-um-spa-react-com-vite">Passos para criar um SPA React com Vite:</a></li>
+        <li class="first-level "><a href="#expandindo-sua-spa">Expandindo sua SPA</a></li>
+            <li class="second-level"><a href="#1-hero-section">1. Hero Section</a></li>
                 
-            <li class="second-level"><a href="#2-buscar-livro-no-catalogo">2. Buscar livro no catálogo</a></li>
+            <li class="second-level"><a href="#2-features-section">2. Features Section</a></li>
                 
-            <li class="second-level"><a href="#3-selecionar-livro-para-reservar">3. Selecionar livro para reservar</a></li>
+            <li class="second-level"><a href="#3-testimonial-section">3. Testimonial Section</a></li>
                 
-            <li class="second-level"><a href="#4-confirmar-reserva">4. Confirmar reserva</a></li>
+            <li class="second-level"><a href="#como-combinar-esses-componentes">Como combinar esses componentes:</a></li>
                 
-            <li class="second-level"><a href="#explicacao">Explicação:</a></li>
-                
-            <li class="second-level"><a href="#como-usar">Como Usar:</a></li>
+            <li class="second-level"><a href="#estilos-css">Estilos (CSS)</a></li>
                 
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<h1 id="prototipo">Protótipo</h1>
-<p>Para criar protótipos em <strong>PlantUML</strong> a partir de cada tarefa da <strong>Análise Hierárquica de Tarefas (AHT)</strong> para o processo de <strong>reservar um livro</strong>, podemos criar uma interface visual separada para cada subtarefa. Isso vai simular como seria o layout ou a estrutura de uma interface de usuário para cada etapa do processo. Abaixo estão os exemplos de protótipos para cada tarefa.</p>
-<h3 id="1-fazer-login-no-sistema">1. <strong>Fazer login no sistema</strong></h3>
-<pre><code class="language-plantuml">@startuml
-skinparam rectangle {
-  BackgroundColor LightSkyBlue
-  BorderColor Navy
-  RoundCorner 20
-}
-
-rectangle &quot;Tela de Login&quot; {
-  rectangle &quot;Inserir nome de usuário&quot;
-  rectangle &quot;Inserir senha&quot;
-  rectangle &quot;Confirmar login&quot;
-  rectangle &quot;[Botão] Entrar&quot;
-}
-@enduml
+<h3 id="criar-um-spa-single-page-application-utilizando-react-com-vite">Criar um SPA (Single Page Application) utilizando <strong>React</strong> com <strong>Vite</strong></h3>
+<h3 id="passos-para-criar-um-spa-react-com-vite">Passos para criar um SPA React com Vite:</h3>
+<p>1. <strong>Instalar o Vite</strong>:
+   Vite é uma ferramenta de construção que facilita a criação de apps modernos com uma performance excelente. Para começar, abra seu terminal e execute o seguinte comando:</p>
+<pre><code class="language-bash">   npm create vite@latest my-spa-app
 </code></pre>
-<h3 id="2-buscar-livro-no-catalogo">2. <strong>Buscar livro no catálogo</strong></h3>
-<pre><code class="language-plantuml">@startuml
-skinparam rectangle {
-  BackgroundColor LightYellow
-  BorderColor GoldenRod
-  RoundCorner 20
-}
-
-rectangle &quot;Buscar Livro no Catálogo&quot; {
-  rectangle &quot;Campo de busca: Digitar nome do livro&quot;
-  rectangle &quot;Selecionar categoria&quot;
-  rectangle &quot;[Botão] Buscar&quot;
-  rectangle &quot;Exibir resultados&quot;
-}
-@enduml
-</code></pre>
-<h3 id="3-selecionar-livro-para-reservar">3. <strong>Selecionar livro para reservar</strong></h3>
-<pre><code class="language-plantuml">@startuml
-skinparam rectangle {
-  BackgroundColor LightGreen
-  BorderColor DarkGreen
-  RoundCorner 20
-}
-
-rectangle &quot;Selecionar Livro para Reservar&quot; {
-  rectangle &quot;Ver detalhes do livro&quot;
-  rectangle &quot;Verificar disponibilidade&quot;
-  rectangle &quot;[Botão] Reservar&quot;
-}
-@enduml
-</code></pre>
-<h3 id="4-confirmar-reserva">4. <strong>Confirmar reserva</strong></h3>
-<pre><code class="language-plantuml">@startuml
-skinparam rectangle {
-  BackgroundColor LightCoral
-  BorderColor DarkRed
-  RoundCorner 20
-}
-
-rectangle &quot;Confirmar Reserva&quot; {
-  rectangle &quot;Clicar em Reservar&quot;
-  rectangle &quot;Receber confirmação&quot;
-  rectangle &quot;[Botão] OK&quot;
-}
-@enduml
-</code></pre>
-<h3 id="explicacao">Explicação:</h3>
+<p>O Vite irá te guiar na configuração inicial do projeto. Escolha as seguintes opções:</p>
 <ul>
-<li><strong>Visual de Cada Tarefa</strong>: Cada tarefa foi convertida em um protótipo de interface separada, simulando como seria a tela do sistema para cada ação específica (login, busca, seleção e confirmação).</li>
-<li><strong>Estilo</strong>: Usei cores diferentes e o <code>skinparam</code> para melhorar a visibilidade e estilo dos protótipos.</li>
-<li><strong>Componentes de UI</strong>: As caixas representam campos de texto, botões e áreas de interação para cada tarefa.</li>
+<li><code>Project name</code>: <strong>my-spa-app</strong> (ou o nome que preferir)</li>
+<li><code>Select a framework</code>: <strong>React</strong></li>
+<li><code>Select a variant</code>: <strong>JavaScript</strong> ou <strong>TypeScript</strong>, dependendo de sua preferência.</li>
 </ul>
-<h3 id="como-usar">Como Usar:</h3>
+<p>2. <strong>Instalar as dependências</strong>:
+   Após criar o projeto, vá para a pasta do projeto e instale as dependências:</p>
+<pre><code>   cd my-spa-app
+
+   npm install
+</code></pre>
+<p>3. <strong>Estrutura de pastas</strong>:
+   Ao concluir, a estrutura do projeto será algo como:</p>
+<pre><code>public
+
+src
+
+    assets
+
+    App.jsx
+
+    main.jsx
+
+    index.css
+
+    index.html
+
+vite.config.js
+</code></pre>
+<p>4. <strong>Iniciar o servidor de desenvolvimento</strong>:</p>
+<p>Agora você pode iniciar o servidor de desenvolvimento e ver o app rodando:</p>
+<pre><code>   npm run dev
+</code></pre>
+<p>5. <strong>Criando Componentes de Rotas (React Router)</strong>:
+   Para um SPA, é comum utilizar o <strong>React Router</strong> para navegação. Instale-o:</p>
+<pre><code class="language-bash">   npm install react-router-dom
+</code></pre>
+<p>Em seguida, configure as rotas no arquivo <code>App.jsx</code>:</p>
+<pre><code class="language-js">
+   import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+   import Home from './components/Home';
+   import About from './components/About';
+
+   function App() {
+     return (
+       &lt;Router&gt;
+         &lt;Routes&gt;
+           &lt;Route path=&quot;/&quot; element={&lt;Home /&gt;} /&gt;
+           &lt;Route path=&quot;/about&quot; element={&lt;About /&gt;} /&gt;
+         &lt;/Routes&gt;
+       &lt;/Router&gt;
+     );
+   }
+
+   export default App;
+</code></pre>
+<p>6. <strong>Criar Páginas (Componentes)</strong>:
+   Crie os componentes para as páginas:</p>
 <ul>
-<li>Copie cada bloco de código em seu editor <strong>PlantUML</strong> para gerar os diagramas individualmente.</li>
-<li>Esses protótipos podem ser usados para simular como seria a interface do usuário em cada fase do processo de reserva de livros.</li>
+<li><code>src/components/Home.jsx</code>:</li>
 </ul>
-<p>Esses exemplos podem ser expandidos ou ajustados conforme as necessidades do seu projeto!</p></div>
+<pre><code class="language-jsx">  function Home() {
+    return &lt;h1&gt;Welcome to Home Page&lt;/h1&gt;;
+  }
+
+  export default Home;
+</code></pre>
+<ul>
+<li><code>src/components/About.jsx</code>:</li>
+</ul>
+<pre><code class="language-jsx">  function About() {
+    return &lt;h1&gt;About Us&lt;/h1&gt;;
+  }
+
+  export default About;
+</code></pre>
+<p>7. <strong>Estilos (CSS)</strong>:
+   Para adicionar estilos, você pode usar o arquivo <code>index.css</code> ou criar estilos específicos para cada componente.</p>
+<p>8. <strong>Build do projeto</strong>:
+   Quando quiser fazer o build do projeto para produção, basta rodar:</p>
+<pre><code class="language-bash">   npm run build
+</code></pre>
+<hr />
+<h2 id="expandindo-sua-spa">Expandindo sua SPA</h2>
+<p>Para criar uma <strong>landing page</strong> com React, você pode estruturar a aplicação com diversos componentes reutilizáveis. Vou sugerir três componentes típicos que você pode incluir em uma landing page e fornecer o código para cada um:</p>
+<h3 id="1-hero-section">1. <strong>Hero Section</strong></h3>
+<p>Esse componente é o primeiro que o usuário vê, geralmente inclui uma mensagem de boas-vindas, uma breve descrição e um call-to-action (CTA).</p>
+<pre><code class="language-js">
+// src/components/Hero.jsx
+function Hero() {
+  return (
+    &lt;section className=&quot;hero&quot;&gt;
+      &lt;div className=&quot;container&quot;&gt;
+        &lt;h1&gt;Welcome to Our Product&lt;/h1&gt;
+        &lt;p&gt;Discover the best solution for your needs with our cutting-edge product.&lt;/p&gt;
+        &lt;a href=&quot;#signup&quot; className=&quot;cta-button&quot;&gt;Get Started&lt;/a&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  );
+}
+
+export default Hero;
+</code></pre>
+<h3 id="2-features-section">2. <strong>Features Section</strong></h3>
+<p>Este componente destaca os principais recursos ou benefícios do produto/serviço oferecido pela landing page.</p>
+<pre><code class="language-js">
+// src/components/Features.jsx
+function Features() {
+  return (
+    &lt;section className=&quot;features&quot;&gt;
+      &lt;div className=&quot;container&quot;&gt;
+        &lt;h2&gt;Main Features&lt;/h2&gt;
+        &lt;div className=&quot;feature-list&quot;&gt;
+          &lt;div className=&quot;feature&quot;&gt;
+            &lt;h3&gt;Feature One&lt;/h3&gt;
+            &lt;p&gt;Explanation of the first feature and its benefits.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;feature&quot;&gt;
+            &lt;h3&gt;Feature Two&lt;/h3&gt;
+            &lt;p&gt;Explanation of the second feature and its benefits.&lt;/p&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;feature&quot;&gt;
+            &lt;h3&gt;Feature Three&lt;/h3&gt;
+            &lt;p&gt;Explanation of the third feature and its benefits.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  );
+}
+
+export default Features;
+</code></pre>
+<h3 id="3-testimonial-section">3. <strong>Testimonial Section</strong></h3>
+<p>Um componente de depoimentos para mostrar feedback de usuários satisfeitos.</p>
+<pre><code class="language-js">
+// src/components/Testimonials.jsx
+function Testimonials() {
+  return (
+    &lt;section className=&quot;testimonials&quot;&gt;
+      &lt;div className=&quot;container&quot;&gt;
+        &lt;h2&gt;What Our Customers Say&lt;/h2&gt;
+        &lt;div className=&quot;testimonial-list&quot;&gt;
+          &lt;div className=&quot;testimonial&quot;&gt;
+            &lt;p&gt;&quot;This product changed my life! Highly recommended.&quot;&lt;/p&gt;
+            &lt;span&gt;- John Doe&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;testimonial&quot;&gt;
+            &lt;p&gt;&quot;A game-changer in the industry, I'm beyond impressed.&quot;&lt;/p&gt;
+            &lt;span&gt;- Jane Smith&lt;/span&gt;
+          &lt;/div&gt;
+          &lt;div className=&quot;testimonial&quot;&gt;
+            &lt;p&gt;&quot;Excellent customer service and fantastic results.&quot;&lt;/p&gt;
+            &lt;span&gt;- Michael Lee&lt;/span&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/section&gt;
+  );
+}
+
+export default Testimonials;
+</code></pre>
+<h3 id="como-combinar-esses-componentes">Como combinar esses componentes:</h3>
+<p>Agora você pode combinar esses componentes dentro do arquivo principal <code>App.jsx</code>:</p>
+<pre><code class="language-js">
+import Hero from './components/Hero';
+import Features from './components/Features';
+import Testimonials from './components/Testimonials';
+
+function App() {
+  return (
+    &lt;&gt;
+      &lt;Hero /&gt;
+      &lt;Features /&gt;
+      &lt;Testimonials /&gt;
+    &lt;/&gt;
+  );
+}
+
+export default App;
+</code></pre>
+<h3 id="estilos-css">Estilos (CSS)</h3>
+<p>Para estilizar os componentes, adicione CSS no arquivo <code>index.css</code> ou crie arquivos CSS específicos para cada componente.</p>
+<pre><code class="language-css">/* index.css */
+.hero {
+  background-color: #f0f8ff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.features {
+  background-color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.testimonials {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.cta-button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+</code></pre>
+<p>Com esses três componentes — <strong>Hero</strong>, <strong>Features</strong>, e <strong>Testimonials</strong> — você pode criar uma landing page atrativa e funcional para destacar seu produto ou serviço.</p></div>
         
         
     </div>
