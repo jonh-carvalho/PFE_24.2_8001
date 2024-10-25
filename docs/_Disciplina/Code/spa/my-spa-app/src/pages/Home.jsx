@@ -2,7 +2,7 @@ import Hero from '../components/Hero.jsx';
 import Features from '../components/Features.jsx';
 import Testimonials from '../components/Testimonials.jsx';
 import Header from '../components/Header.jsx';
-import Footer from '../components/Footer.jsx';
+// import Footer from '../components/Footer.jsx';
 
 function Home() {
   
@@ -12,7 +12,9 @@ function Home() {
     <Hero />
     <Features />
     <Testimonials />
-    <Footer />
+
+    {/*<Footer />*/}
+
     </>
     );
    
