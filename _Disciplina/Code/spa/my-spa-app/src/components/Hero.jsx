@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Usuario from './Usuario';
 
 const BotaoEstilizado = styled.button`
   background-color: #3498db;
@@ -25,6 +26,10 @@ function Hero() {
           <br />
           <BotaoEstilizado>Get Started</BotaoEstilizado>
           <BotaoEstilizado>Get Started</BotaoEstilizado>
+
+          <h1>Lista de Usuários</h1>
+          <Usuario nome="Alice" idade={28} />
+          <Usuario nome="Carlos" idade={34} />
         </div>
       </section>
     );
