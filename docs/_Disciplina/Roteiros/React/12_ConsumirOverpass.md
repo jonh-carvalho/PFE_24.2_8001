@@ -1,4 +1,4 @@
-# Mapas e Locais(Overpass, Nominatim e OpenStreetMap)
+# 12_Mapas e Locais(Overpass, Nominatim e OpenStreetMap)
 
 Para adicionar um mapa com marcadores dos locais encontrados, podemos usar a biblioteca **Leaflet.js**, uma biblioteca de JavaScript para mapas interativos. Aqui está o código HTML e JavaScript atualizado que inclui um mapa e adiciona marcadores para cada local encontrado:
 
@@ -59,7 +59,7 @@ Para adicionar um mapa com marcadores dos locais encontrados, podemos usar a bib
         // Coordenadas de localização inicial (São Paulo)
         const latitude = -23.55052;
         const longitude = -46.633308;
-      
+    
         // Inicializando o mapa com o Leaflet
         const map = L.map('map').setView([latitude, longitude], 13);
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {

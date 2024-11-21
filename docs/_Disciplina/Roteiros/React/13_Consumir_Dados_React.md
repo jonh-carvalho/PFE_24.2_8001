@@ -1,4 +1,4 @@
-# React - Mapas e Locais(Overpass, Nominatim e OpenStreetMap)
+# 13_React - Mapas e Locais(Overpass, Nominatim e OpenStreetMap)
 
 Para criar um site em Vite com React que encontre hospitais, delegacias, escolas e outros locais próximos usando um dropdown, podemos utilizar a **Geolocation API** para obter a posição do usuário e a **Overpass API** (baseada no OpenStreetMap) para buscar locais próximos. O Leaflet será usado para exibir um mapa interativo.
 
@@ -139,7 +139,7 @@ L.Icon.Default.mergeOptions({
 const MapView = ({ userLocation, places }) => {
     return (
         <MapContainer center={[userLocation.lat, userLocation.lon]} zoom={13} style={{ height: "400px", width: "100%" }}>
-            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='&copy; OpenStreetMap contributors' />
+            <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" attribution='© OpenStreetMap contributors' />
 
             {/* Marcador para a posição do usuário */}
             <Marker position={[userLocation.lat, userLocation.lon]}>
