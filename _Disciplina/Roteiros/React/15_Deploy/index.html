@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../../img/favicon.ico">
 
     
-    <title>01 Intro - PFE_24.2_8001</title>
+    <title>15 Deploy - PFE_24.2_8001</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -138,8 +138,8 @@
     <ul class="dropdown-menu">
         
             
-<li class="active">
-    <a href="./">01 Intro</a>
+<li >
+    <a href="../01_Intro/">01 Intro</a>
 </li>
 
         
@@ -222,8 +222,8 @@
 
         
             
-<li >
-    <a href="../15_Deploy/">15 Deploy</a>
+<li class="active">
+    <a href="./">15 Deploy</a>
 </li>
 
         
@@ -303,17 +303,17 @@
 
             <ul class="nav navbar-nav navbar-right">
                     <li >
-                        <a rel="prev" href="../../Prot%C3%B3tipo/prot%C3%B3tipo/">
+                        <a rel="prev" href="../14_Login/">
                             <i class="fas fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="next" href="../02_NodeViteReact/">
+                        <a rel="next" href="../../../../base/5w2h/">
                             Next <i class="fas fa-arrow-right"></i>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/jonh-carvalho/PFE_24.2_8001/edit/master/docs/_Disciplina/Roteiros/React/01_Intro.md"><i class="fab fa-github"></i> Edit on GitHub</a>
+                        <a href="https://github.com/jonh-carvalho/PFE_24.2_8001/edit/master/docs/_Disciplina/Roteiros/React/15_Deploy.md"><i class="fab fa-github"></i> Edit on GitHub</a>
                     </li>
             </ul>
         </div>
@@ -325,82 +325,33 @@
         
         <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="first-level active"><a href="#introducao-ao-react-com-html-e-cdn">Introdução ao React com HTML e CDN</a></li>
-            <li class="second-level"><a href="#objetivo">Objetivo:</a></li>
+        <li class="first-level active"><a href="#1-deploy-no-vercel">1. Deploy no Vercel</a></li>
+            <li class="second-level"><a href="#passo-a-passo">Passo a Passo:</a></li>
                 
-        <li class="first-level "><a href="#estrutura-do-roteiro">Estrutura do Roteiro:</a></li>
-            <li class="second-level"><a href="#1-introducao-ao-react">1. Introdução ao React</a></li>
-                
-            <li class="second-level"><a href="#2-preparando-o-ambiente">2. Preparando o Ambiente</a></li>
-                
-            <li class="second-level"><a href="#3-estrutura-basica-do-projeto">3. Estrutura Básica do Projeto</a></li>
-                
-            <li class="second-level"><a href="#4-criando-um-elemento-react">4. Criando um Elemento React</a></li>
+            <li class="second-level"><a href="#comando-manual-para-deploy">Comando manual para deploy:</a></li>
                 
     </ul>
 </div></div>
         <div class="col-md-9" role="main">
 
-<hr />
-<h3 id="introducao-ao-react-com-html-e-cdn"><strong>Introdução ao React com HTML e CDN</strong></h3>
-<hr />
-<h4 id="objetivo"><strong>Objetivo:</strong></h4>
-<p>Apresentar os conceitos básicos do React e como integrá-lo em uma página HTML utilizando um link para a CDN, sem a necessidade de um ambiente de desenvolvimento local como o Node.js.</p>
-<hr />
-<h3 id="estrutura-do-roteiro"><strong>Estrutura do Roteiro:</strong></h3>
-<h4 id="1-introducao-ao-react"><strong>1. Introdução ao React</strong></h4>
-<ul>
-<li><strong>Definição</strong>: React é uma biblioteca JavaScript criada pelo Facebook para criar interfaces de usuário de forma declarativa e eficiente.</li>
-<li><strong>Vantagens</strong>:<ul>
-<li>Componentes reutilizáveis.</li>
-<li>Atualizações rápidas do DOM (Virtual DOM).</li>
-<li>Facilita a criação de Single Page Applications (SPAs).</li>
-</ul>
-</li>
-</ul>
-<hr />
-<h4 id="2-preparando-o-ambiente"><strong>2. Preparando o Ambiente</strong></h4>
-<ul>
-<li>Não é necessário instalar nada localmente para este exemplo inicial, vamos usar uma página HTML e um link para a biblioteca via CDN.</li>
-</ul>
-<hr />
-<h4 id="3-estrutura-basica-do-projeto"><strong>3. Estrutura Básica do Projeto</strong></h4>
-<ul>
-<li><strong>HTML Básico</strong>: <ul>
-<li>Comece com a criação de uma página HTML simples contendo um elemento <code>&lt;div&gt;</code> que será usado como “ponto de montagem” para o React.</li>
-</ul>
-</li>
-</ul>
-<pre><code class="language-html">   &lt;!DOCTYPE html&gt;
-   &lt;html lang=&quot;en&quot;&gt;
-   &lt;head&gt;
-     &lt;meta charset=&quot;UTF-8&quot;&gt;
-     &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-     &lt;title&gt;React Introdução&lt;/title&gt;
-   &lt;/head&gt;
-   &lt;body&gt;
-     &lt;!-- Div onde o React renderizará o conteúdo --&gt;
-     &lt;div id=&quot;root&quot;&gt;&lt;/div&gt;
-
-     &lt;!-- Scripts do React via CDN --&gt;
-     &lt;script src=&quot;https://unpkg.com/react@17/umd/react.production.min.js&quot; crossorigin&gt;&lt;/script&gt;
-     &lt;script src=&quot;https://unpkg.com/react-dom@17/umd/react-dom.production.min.js&quot; crossorigin&gt;&lt;/script&gt;
-     &lt;!-- Nosso script JavaScript --&gt;
-     &lt;script src=&quot;app.js&quot;&gt;&lt;/script&gt;
-   &lt;/body&gt;
-   &lt;/html&gt;
-</code></pre>
-<hr />
-<h4 id="4-criando-um-elemento-react"><strong>4. Criando um Elemento React</strong></h4>
-<p>Crie o arquivo <code>app.js</code> com o seguinte código:</p>
-<pre><code class="language-javascript">   ReactDOM.render(
-    React.createElement(
-        'h1',
-        null,
-        'Hello, World!'
-    ),
-    document.getElementById('root'))
-</code></pre></div>
+<p>A maneira mais simples de fazer o deploy de um projeto Vite com React é usando o <strong>Vercel</strong> ou o <strong>Netlify</strong>. Ambos oferecem processos rápidos e automáticos de deploy para projetos front-end, e você pode fazer o deploy diretamente do seu repositório GitHub, GitLab ou Bitbucket. Vou descrever o processo de deploy usando ambos.</p>
+<h3 id="1-deploy-no-vercel">1. Deploy no Vercel</h3>
+<p>Vercel é uma plataforma popular para aplicativos front-end, com suporte nativo para projetos Vite.</p>
+<h4 id="passo-a-passo">Passo a Passo:</h4>
+<ol>
+<li><strong>Faça login</strong> ou <strong>crie uma conta</strong> no <a href="https://vercel.com/">Vercel</a>.</li>
+<li><strong>Conecte o repositório</strong>:</li>
+<li>Clique em <strong>New Project</strong> e conecte sua conta do GitHub, GitLab ou Bitbucket.</li>
+<li>Escolha o repositório do seu projeto Vite.</li>
+<li><strong>Configurações de build</strong>:</li>
+<li>No caso do Vite, o Vercel geralmente detecta automaticamente as configurações.</li>
+<li>Verifique se o framework está definido como <strong>Vite</strong> e o comando de build como <code>npm run build</code>.</li>
+<li><strong>Deploy</strong>:</li>
+<li>Clique em <strong>Deploy</strong> e aguarde até que o processo seja concluído.</li>
+<li><strong>Pronto!</strong> O Vercel fornecerá uma URL para acessar o seu projeto.</li>
+</ol>
+<h4 id="comando-manual-para-deploy">Comando manual para deploy:</h4>
+<p>Se você quiser fazer o deploy manualmente, primeiro rode o comando <code>npm run build</code> para gerar a pasta <code>dist</code>, e faça o upload manualmente para Vercel.</p></div>
         
         
     </div>
