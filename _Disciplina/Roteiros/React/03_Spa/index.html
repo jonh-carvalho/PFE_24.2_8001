@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="../../../../img/favicon.ico">
 
     
-    <title>03 Spa - PFE_24.2_8001</title>
+    <title>03 - Spa - PFE_24.2_8001</title>
     
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -139,37 +139,37 @@
         
             
 <li >
-    <a href="../01_Intro/">Introdução</a>
+    <a href="../01_Intro/">01 - Introdução</a>
 </li>
 
         
             
 <li >
-    <a href="../02_NodeViteReact/">Node Vite React</a>
+    <a href="../02_NodeViteReact/">02 - Node Vite React</a>
 </li>
 
         
             
 <li class="active">
-    <a href="./">03 Spa</a>
+    <a href="./">03 - Spa</a>
 </li>
 
         
             
 <li >
-    <a href="../04_Componentes/">04 Componentes</a>
+    <a href="../04_Componentes/">04 - Componentes</a>
 </li>
 
         
             
 <li >
-    <a href="../06_Http/">06 Http</a>
+    <a href="../05_Http/">05 - Protocolo Http</a>
 </li>
 
         
             
 <li >
-    <a href="../07_Fetch/">07 Fetch</a>
+    <a href="../07_Fetch/">06 - Fetch</a>
 </li>
 
         
@@ -383,60 +383,32 @@
 </ul>
 <h3 id="vantagens-de-uma-spa">Vantagens de uma SPA:</h3>
 <ul>
-<li>
-<p><strong>Melhor experiência do usuário (UX)</strong>: Navegação suave, sem interrupções devido a recarregamentos de página.</p>
-</li>
-<li>
-<p><strong>Aplicações mais interativas</strong>: Ideal para aplicativos ricos em interação, como redes sociais, dashboards e sistemas de gerenciamento.</p>
-</li>
-<li>
-<p><strong>Desempenho aprimorado</strong>: Depois do carregamento inicial, as requisições são menores e mais rápidas, já que apenas os dados mudam, e não o layout completo da página.</p>
-</li>
+<li><strong>Melhor experiência do usuário (UX)</strong>: Navegação suave, sem interrupções devido a recarregamentos de página.</li>
+<li><strong>Aplicações mais interativas</strong>: Ideal para aplicativos ricos em interação, como redes sociais, dashboards e sistemas de gerenciamento.</li>
+<li><strong>Desempenho aprimorado</strong>: Depois do carregamento inicial, as requisições são menores e mais rápidas, já que apenas os dados mudam, e não o layout completo da página.</li>
 </ul>
 <h3 id="desvantagens">Desvantagens:</h3>
 <ul>
-<li>
-<p><strong>SEO</strong>: Embora o SEO para SPAs tenha melhorado com técnicas como server-side rendering (SSR) e prerendering, ainda pode ser mais desafiador quando comparado a sites tradicionais.</p>
-</li>
-<li>
-<p><strong>Carregamento inicial maior</strong>: A aplicação pode ter um tempo de carregamento inicial mais longo devido à necessidade de carregar grande parte do conteúdo e do código de uma vez.</p>
-</li>
+<li><strong>SEO</strong>: Embora o SEO para SPAs tenha melhorado com técnicas como server-side rendering (SSR) e prerendering, ainda pode ser mais desafiador quando comparado a sites tradicionais.</li>
+<li><strong>Carregamento inicial maior</strong>: A aplicação pode ter um tempo de carregamento inicial mais longo devido à necessidade de carregar grande parte do conteúdo e do código de uma vez.</li>
 </ul>
 <h3 id="exemplos-de-spas">Exemplos de SPAs:</h3>
 <ul>
-<li>
-<p>Aplicativos de redes sociais como <strong>Facebook</strong> e <strong>Instagram</strong>.</p>
-</li>
-<li>
-<p>Sistemas de email como <strong>Gmail</strong>.</p>
-</li>
-<li>
-<p>Aplicativos de gestão como <strong>Trello</strong>.</p>
-</li>
-<li>
-<p>Sites com grande interatividade, como dashboards ou plataformas de e-learning.</p>
-</li>
+<li>Aplicativos de redes sociais como <strong>Facebook</strong> e <strong>Instagram</strong>.</li>
+<li>Sistemas de email como <strong>Gmail</strong>.</li>
+<li>Aplicativos de gestão como <strong>Trello</strong>.</li>
+<li>Sites com grande interatividade, como dashboards ou plataformas de e-learning.</li>
 </ul>
 <p>Em resumo, uma SPA oferece uma navegação mais fluida e rápida, especialmente útil para aplicações dinâmicas e interativas, mas exige um planejamento cuidadoso em termos de carregamento inicial e SEO.</p>
 <h2 id="criando-um-spa-para-um-evento-com-react-e-vite">Criando um SPA para um Evento com React e Vite</h2>
 <h3 id="entendendo-o-contexto">Entendendo o Contexto</h3>
 <p>Antes de propormos uma estrutura para o SPA, é importante entender alguns detalhes sobre o evento:</p>
 <ul>
-<li>
-<p>Tipo de evento: Conferência, workshop, feira, etc.</p>
-</li>
-<li>
-<p>Público-alvo: Profissionais, estudantes, público geral.</p>
-</li>
-<li>
-<p>Funcionalidades: Agenda, palestrantes, inscrição, chat, etc.</p>
-</li>
-<li>
-<p>Design: Estilo visual, identidade visual do evento.</p>
-</li>
-<li>
-<p>Integrações: Plataformas de pagamento, sistemas de gestão de eventos.</p>
-</li>
+<li>Tipo de evento: Conferência, workshop, feira, etc.</li>
+<li>Público-alvo: Profissionais, estudantes, público geral.</li>
+<li>Funcionalidades: Agenda, palestrantes, inscrição, chat, etc.</li>
+<li>Design: Estilo visual, identidade visual do evento.</li>
+<li>Integrações: Plataformas de pagamento, sistemas de gestão de eventos.</li>
 </ul>
 <h4 id="estrutura-proposta">Estrutura Proposta</h4>
 <p>Com base em um cenário geral, podemos propor uma estrutura básica para o SPA:</p>
@@ -451,7 +423,7 @@
             EventCard.jsx
             SpeakerCard.jsx
             // ... outros componentes</p>
-<pre><code>    pages/
+<pre><code>pages/
         Home.jsx
         Schedule.jsx
         Speakers.jsx
@@ -459,87 +431,49 @@
         Registration.jsx
         // ... outras páginas
 
-    utils/
+utils/
         api.js // Para chamadas à API
         helpers.js // Funções auxiliares
 
-    styles/
+styles/
         global.css
         theme.css
 
-    App.jsx
+App.jsx
     index.css
     main.jsx
 </code></pre>
 <h3 id="componentes-principais">Componentes Principais:</h3>
 <ul>
-<li>
-<p>Header: Contém o logo, menu de navegação e outras informações gerais.</p>
-</li>
-<li>
-<p>Footer: Contém informações de contato, redes sociais e outros links relevantes.</p>
-</li>
-<li>
-<p>Navbar: Menu de navegação principal.</p>
-</li>
-<li>
-<p>EventCard: Componente para exibir informações sobre cada evento (título, data, horário, descrição).</p>
-</li>
+<li>Header: Contém o logo, menu de navegação e outras informações gerais.</li>
+<li>Footer: Contém informações de contato, redes sociais e outros links relevantes.</li>
+<li>Navbar: Menu de navegação principal.</li>
+<li>EventCard: Componente para exibir informações sobre cada evento (título, data, horário, descrição).</li>
 <li>SpeakerCard: Componente para exibir informações sobre cada palestrante (nome, foto, bio).</li>
 </ul>
 <h3 id="outras-paginas">Outras páginas:</h3>
 <ul>
-<li>
-<p>Home: Página inicial com informações gerais sobre o evento.</p>
-</li>
-<li>
-<p>Schedule: Agenda completa do evento.</p>
-</li>
-<li>
-<p>Speakers: Lista de palestrantes.</p>
-</li>
-<li>
-<p>About: Informações sobre os organizadores e patrocinadores.</p>
-</li>
-<li>
-<p>Registration: Formulário de inscrição.</p>
-</li>
+<li>Home: Página inicial com informações gerais sobre o evento.</li>
+<li>Schedule: Agenda completa do evento.</li>
+<li>Speakers: Lista de palestrantes.</li>
+<li>About: Informações sobre os organizadores e patrocinadores.</li>
+<li>Registration: Formulário de inscrição.</li>
 </ul>
 <h3 id="funcionalidades-essenciais">Funcionalidades Essenciais:</h3>
 <ul>
-<li>
-<p>Navegação: Implementar navegação entre as diferentes páginas utilizando um roteador como o React Router.</p>
-</li>
-<li>
-<p>Carregamento de dados: Utilizar o Fetch API ou uma biblioteca como Axios para buscar dados da API do evento (agenda, palestrantes, etc.).</p>
-</li>
-<li>
-<p>Gerenciamento de estado: Utilizar um gerenciador de estado como o Redux ou o Context API para compartilhar dados entre componentes.</p>
-</li>
-<li>
-<p>Formulários: Implementar formulários para inscrição, busca e outras interações.</p>
-</li>
-<li>
-<p>Responsividade: Garantir que o SPA funcione em diferentes dispositivos (desktop, mobile, tablet).</p>
-</li>
-<li>
-<p>Acessibilidade: Seguir as diretrizes de acessibilidade para garantir que o SPA seja utilizável por todos.</p>
-</li>
+<li>Navegação: Implementar navegação entre as diferentes páginas utilizando um roteador como o React Router.</li>
+<li>Carregamento de dados: Utilizar o Fetch API ou uma biblioteca como Axios para buscar dados da API do evento (agenda, palestrantes, etc.).</li>
+<li>Gerenciamento de estado: Utilizar um gerenciador de estado como o Redux ou o Context API para compartilhar dados entre componentes.</li>
+<li>Formulários: Implementar formulários para inscrição, busca e outras interações.</li>
+<li>Responsividade: Garantir que o SPA funcione em diferentes dispositivos (desktop, mobile, tablet).</li>
+<li>Acessibilidade: Seguir as diretrizes de acessibilidade para garantir que o SPA seja utilizável por todos.</li>
 </ul>
 <h3 id="tecnologias-adicionais">Tecnologias Adicionais:</h3>
 <ul>
-<li>
-<p>Styling: Utilizar CSS, Sass ou uma biblioteca de estilos como o Material UI ou o Tailwind CSS.</p>
-</li>
-<li>
-<p>Icones: Utilizar bibliotecas de ícones como o FontAwesome ou o Material Icons.</p>
-</li>
-<li>
-<p>Animações: Utilizar bibliotecas de animação como o Framer Motion ou o React Spring.</p>
-</li>
-<li>
-<p>Testes: Implementar testes unitários e de integração para garantir a qualidade do código.</p>
-</li>
+<li>Styling: Utilizar CSS, Sass ou uma biblioteca de estilos como o Material UI ou o Tailwind CSS.</li>
+<li>Icones: Utilizar bibliotecas de ícones como o FontAwesome ou o Material Icons.</li>
+<li>Animações: Utilizar bibliotecas de animação como o Framer Motion ou o React Spring.</li>
+<li>Testes: Implementar testes unitários e de integração para garantir a qualidade do código.</li>
 </ul>
 <h3 id="exemplo-de-componente-eventcard">Exemplo de Componente EventCard:</h3>
 <pre><code class="language-js">import React from 'react';
@@ -560,33 +494,17 @@ export default EventCard;
 <h3 id="use-o-codigo-com-cuidado">Use o código com cuidado.</h3>
 <h3 id="proximos-passos">Próximos Passos:</h3>
 <ul>
-<li>
-<p>Definir a arquitetura: Escolher uma arquitetura de componentes e como organizar o código.</p>
-</li>
-<li>
-<p>Criar o design: Desenvolver o design visual do SPA.</p>
-</li>
-<li>
-<p>Implementar as funcionalidades: Desenvolver cada componente e funcionalidade de acordo com o design e os requisitos do evento.</p>
-</li>
-<li>
-<p>Testar e depurar: Realizar testes e corrigir bugs.</p>
-</li>
-<li>
-<p>Deploy: Hospedar o SPA em um servidor.</p>
-</li>
+<li>Definir a arquitetura: Escolher uma arquitetura de componentes e como organizar o código.</li>
+<li>Criar o design: Desenvolver o design visual do SPA.</li>
+<li>Implementar as funcionalidades: Desenvolver cada componente e funcionalidade de acordo com o design e os requisitos do evento.</li>
+<li>Testar e depurar: Realizar testes e corrigir bugs.</li>
+<li>Deploy: Hospedar o SPA em um servidor.</li>
 </ul>
 <h3 id="consideracoes-adicionais">Considerações Adicionais:</h3>
 <ul>
-<li>
-<p>Personalização: Adaptar a estrutura e as funcionalidades de acordo com as necessidades específicas do evento.</p>
-</li>
-<li>
-<p>Otimização: Otimizar o desempenho do SPA para garantir uma boa experiência do usuário.</p>
-</li>
-<li>
-<p>Segurança: Implementar medidas de segurança para proteger os dados dos usuários.</p>
-</li>
+<li>Personalização: Adaptar a estrutura e as funcionalidades de acordo com as necessidades específicas do evento.</li>
+<li>Otimização: Otimizar o desempenho do SPA para garantir uma boa experiência do usuário.</li>
+<li>Segurança: Implementar medidas de segurança para proteger os dados dos usuários.</li>
 </ul></div>
         
         
